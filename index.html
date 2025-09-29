@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Visualization Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script type="importmap">
+            {"imports": {
+                "lacery": "https://cdn.jsdelivr.net/npm/lacery@latest/+esm",
+                "three": "./node_modules/three/build/three.module.js",
+                "three/addons/": "./node_modules/three/examples/jsm/"
+                }
+            }
+        </script>
+    <script src="main.js" type="module"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/themes/light.css" />
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/shoelace-autoloader.js"></script>
+
+    <!-- Lacery UI -->
+    <sl-card id="laceryui" , class="card">
+        <div slot="header">
+            Options
+            <sl-icon-button name="x-lg" label="closeOption"></sl-icon-button>
+        </div>
+    </sl-card>
+
+    <!-- options button -->
+    <div id="options">
+        <sl-button value="optionBtn" slot="trigger">Options</sl-button>
+    </div>
+
+    <!-- scene selection -->
+    <div id="sceneSelection" class="dropdown">
+        <sl-dropdown value="sceneSel">
+            <sl-button slot="trigger" caret>Select Scene</sl-button>
+            <sl-menu>
+                <sl-menu-item class="ddItem" type="checkbox" checked value="phongSel">Phong Lighting</sl-menu-item>
+                <sl-menu-item class="ddItem" type="checkbox" value="shadingSel">Shading</sl-menu-item>
+                <sl-menu-item class="ddItem" type="checkbox" value="mapSel">Mapping</sl-menu-item>
+                <sl-menu-item class="ddItem" type="checkbox" value="aliasSel">Aliasing</sl-menu-item>
+                <sl-menu-item class="ddItem" type="checkbox" value="zFightSel">Z-Fighting</sl-menu-item>
+                <sl-menu-item class="ddItem" type="checkbox" value="masterSceneSel">Master Scene</sl-menu-item>
+            </sl-menu>
+        </sl-dropdown>
+    </div>
+
+    <!-- reset button -->
+    <div id="res">
+        <sl-button value="resetBtn" slot="trigger">Reset</sl-button>
+    </div>
+
+    <!-- info button and card -->
+    <div id="info">
+        <sl-button value="infoBtn" slot="trigger">Info</sl-button>
+        <sl-card id="infoCard" class="infoCard">
+            <div slot="header">
+                Info
+                <sl-icon-button name="x-lg" label="closeInfo"></sl-icon-button>
+            </div>
+            <div id="infoText">Something went wrong :(</div>
+        </sl-card>
+    </div>
+</body>
+
+</html>

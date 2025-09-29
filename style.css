@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#sceneSelection {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#res {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+#info {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+#options {
+    z-index: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+sl-card {
+    position: absolute;
+    font: bold 15px Arial;
+    min-width: 310px;
+    max-width: 310px;
+    max-height: 95vh;
+    overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+}
+
+sl-card::part(header) {
+    z-index: 1;
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+
+sl-card::part(body) {
+    font: 15px Arial;
+    overflow: visible;
+}
+
+sl-card.card::part(body) {
+    padding: 0;
+}
+
+.infoCard {
+    left: 0px;
+    bottom: 0px;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.infoCard [slot='header'] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    right: 10px;
+    top: 10px;
+}
+
+.card [slot='header'] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
