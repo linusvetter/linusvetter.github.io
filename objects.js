@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
+import { OBJLoader } from "three/examples/jsm/Addons.js";
+import * as BufferGeometryUtils from "three/examples/jsm/Addons.js";
 
 import partyFrag from './shaders/partyFrag.js';
 import phongVertShader from './shaders/phongVert.js';

@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { TransformControls } from 'three/addons/controls/TransformControls.js';
+import { TransformControls } from "three/examples/jsm/Addons.js";
 
 /**
  * element that holds all the different parts of the light
