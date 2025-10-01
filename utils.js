@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+// 'https://cdn.skypack.dev/three@0.132.2'
+// "https://cdn.jsdelivr.net/npm/three@v0.132.2/build/three.module.js"
 
 const loader = new THREE.TextureLoader();
 

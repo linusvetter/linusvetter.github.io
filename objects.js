@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { OBJLoader } from "three/examples/jsm/Addons.js";
-import * as BufferGeometryUtils from "three/examples/jsm/Addons.js";
+import { OBJLoader } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/loaders/OBJLoader.js';
+import * as BufferGeometryUtils from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/utils/BufferGeometryUtils.js';
 
 import partyFrag from './shaders/partyFrag.js';
 import phongVertShader from './shaders/phongVert.js';

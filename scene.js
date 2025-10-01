@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import { EffectComposer } from "three/examples/jsm/Addons.js";
-import { SSAARenderPass } from "three/examples/jsm/Addons.js";
-import { ShaderPass } from "three/examples/jsm/Addons.js";
-import { CopyShader } from "three/examples/jsm/Addons.js";
-import { OrbitControls } from "three/examples/jsm/Addons.js";
+import { EffectComposer } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/postprocessing/EffectComposer.js';
+import { SSAARenderPass } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/postprocessing/SSAARenderPass.js';
+import { ShaderPass } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/postprocessing/ShaderPass.js';
+import { CopyShader } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/shaders/CopyShader.js';
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
 import * as utils from './utils.js';
 import * as skybox from './skybox.js';
 import * as objects from './objects.js';

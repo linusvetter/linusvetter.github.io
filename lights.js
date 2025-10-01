@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { TransformControls } from "three/examples/jsm/Addons.js";
+import { TransformControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/TransformControls.js';
 
 /**
  * element that holds all the different parts of the light
